@@ -1,7 +1,9 @@
 package com.jota.marvel.data.repository.datasource;
 
+import com.jota.marvel.data.entity.ComicsResponse;
 import com.jota.marvel.data.net.RestApi;
 import com.jota.marvel.data.net.RestApiImpl;
+import io.reactivex.Observable;
 
 public class CloudDataStore implements CloudData {
 
@@ -19,5 +21,9 @@ public class CloudDataStore implements CloudData {
 
   private void buildRetrofit() {
     mRestApi = RestApiImpl.createRetrofitService(mEndPoint, mPublicKey, mPrivateKey);
+  }
+
+  @Override public Observable<ComicsResponse> getComics(int characterId) {
+    return mRestApi.getComics(characterId);
   }
 }

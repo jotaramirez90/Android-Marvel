@@ -10,12 +10,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import com.jota.marvel.R;
 import com.jota.marvel.model.DummyContent;
-import com.jota.marvel.ui.features.detail.view.ItemDetailActivity;
-import com.jota.marvel.ui.features.main.view.ItemListActivity;
+import com.jota.marvel.ui.features.main.view.MainActivity;
 
 /**
  * A fragment representing a single Item detail screen.
- * This fragment is either contained in a {@link ItemListActivity}
+ * This fragment is either contained in a {@link MainActivity}
  * in two-pane mode (on tablets) or a {@link ItemDetailActivity}
  * on handsets.
  */

@@ -24,7 +24,7 @@ public class MainApplication extends Application {
     mApplicationComponent.inject(this);
   }
 
-  private ApplicationComponent getApplicationComponent() {
+  public ApplicationComponent getApplicationComponent() {
     return mApplicationComponent;
   }
 }

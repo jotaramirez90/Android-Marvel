@@ -9,6 +9,6 @@
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
     app:layoutManager="LinearLayoutManager"
-    tools:context="com.jota.marvel.ui.features.main.view.ItemListActivity"
+    tools:context="com.jota.marvel.ui.features.main.view.MainActivity"
     tools:listitem="@layout/item_list_content"
     />

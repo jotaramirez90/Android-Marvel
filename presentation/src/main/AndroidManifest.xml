@@ -3,6 +3,8 @@
     package="com.jota.marvel"
     >
 
+  <uses-permission android:name="android.permission.INTERNET"/>
+
   <application
       android:name=".app.MainApplication"
       android:allowBackup="true"
@@ -12,7 +14,7 @@
       android:theme="@style/AppTheme"
       >
     <activity
-        android:name=".ui.features.main.view.ItemListActivity"
+        android:name=".ui.features.main.view.MainActivity"
         android:label="@string/app_name"
         android:theme="@style/AppTheme.NoActionBar"
         >
@@ -25,12 +27,12 @@
     <activity
         android:name=".ui.features.detail.view.ItemDetailActivity"
         android:label="@string/title_item_detail"
-        android:parentActivityName=".ui.features.main.view.ItemListActivity"
+        android:parentActivityName=".ui.features.main.view.MainActivity"
         android:theme="@style/AppTheme.NoActionBar"
         >
-      <meta-data
+      <meta-dataEntity
           android:name="android.support.PARENT_ACTIVITY"
-          android:value="com.jota.marvel.ui.features.main.view.ItemListActivity"
+          android:value="com.jota.marvel.ui.features.main.view.MainActivity"
           />
     </activity>
   </application>
