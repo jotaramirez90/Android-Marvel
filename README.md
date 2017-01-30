@@ -25,12 +25,10 @@ The app uses Rx 2.0, Dagger 2 and Retrofit2.
 * [RecyclerView](https://developer.android.com/training/material/lists-cards.html?hl=en)
 * [RxJava](https://github.com/ReactiveX/RxJava)
 * [RxAndroid](https://github.com/ReactiveX/RxAndroid)
-* [RxKotlin](https://github.com/ReactiveX/RxKotlin)
 * [Retrofit](https://github.com/square/retrofit)
 * [Dagger](https://github.com/google/dagger)
 * [Picasso](https://github.com/square/picasso)
 * [Butterknife](https://github.com/JakeWharton/butterknife)
-* [Frodo](https://github.com/android10/frodo)
 
 # Help me
 Pull requests are more than welcome, help me and others improve this app.
