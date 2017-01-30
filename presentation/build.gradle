@@ -74,6 +74,7 @@ dependencies {
   compile presentationDependencies.playServicesLocation
   compile presentationDependencies.butterKnife
   apt presentationDependencies.butterKnifeCompiler
+  compile presentationDependencies.picasso
 
   compile presentationDependencies.rxJava
   compile presentationDependencies.rxAndroid

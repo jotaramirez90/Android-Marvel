@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:tag="@string/tag_landscape"
     tools:context="com.jota.marvel.ui.features.main.view.MainActivity"
     >
 
@@ -24,14 +25,31 @@
 
   </android.support.design.widget.AppBarLayout>
 
-  <FrameLayout
-      android:id="@+id/frameLayout"
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:tag="V11-landscape"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
+      tools:context=".MainActivity"
+      android:weightSum="5"
       app:layout_behavior="@string/appbar_scrolling_view_behavior"
       >
 
-    <include layout="@layout/item_list"/>
-  </FrameLayout>
+    <FrameLayout
+        android:id="@+id/comicsFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/detailsFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        />
+  </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

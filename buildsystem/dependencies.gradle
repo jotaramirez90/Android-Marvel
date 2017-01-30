@@ -24,6 +24,7 @@ ext {
   retrofitVersion = '2.1.0'
   retrofitAdapter = '1.0.0'
   daggerVersion = '2.8'
+  picassoVersion = '2.5.2'
   javaxAnnotationVersion = '1.0'
   androidAnnotationsVersion = '23.1.1'
   jetbrainsAnnotationVersion = '13.0'
@@ -37,21 +38,22 @@ ext {
   espressoVersion = '2.0'
   testingSupportLibVersion = '0.1'
 
-  presentationDependencies = [appcompat            : "com.android.support:appcompat-v7:${appcompatVersion}",
-                              supportV13           : "com.android.support:support-v13:${supportV13Version}",
-                              design               : "com.android.support:design:${designVersion}",
-                              recyclerView         : "com.android.support:recyclerview-v7:${recyclerViewVersion}",
-                              playServicesLocation : "com.google.android.gms:play-services-location:${playServicesVersion}",
-                              multidex             : "com.android.support:multidex:${multidexVersion}",
-                              butterKnife          : "com.jakewharton:butterknife:${butterKnifeVersion}",
-                              butterKnifeCompiler  : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
-                              rxJava               : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
-                              rxAndroid            : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
-                              daggerCompiler       : "com.google.dagger:dagger-compiler:${daggerVersion}",
-                              dagger               : "com.google.dagger:dagger:${daggerVersion}",
-                              javaxAnnotation      : "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
-                              jUnit                : "junit:junit:${jUnitVersion}",
-                              jetbrainsAnnotations : "org.jetbrains:annotations:${jetbrainsAnnotationVersion}"]
+  presentationDependencies = [appcompat           : "com.android.support:appcompat-v7:${appcompatVersion}",
+                              supportV13          : "com.android.support:support-v13:${supportV13Version}",
+                              design              : "com.android.support:design:${designVersion}",
+                              recyclerView        : "com.android.support:recyclerview-v7:${recyclerViewVersion}",
+                              playServicesLocation: "com.google.android.gms:play-services-location:${playServicesVersion}",
+                              multidex            : "com.android.support:multidex:${multidexVersion}",
+                              butterKnife         : "com.jakewharton:butterknife:${butterKnifeVersion}",
+                              butterKnifeCompiler : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+                              rxJava              : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+                              rxAndroid           : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+                              daggerCompiler      : "com.google.dagger:dagger-compiler:${daggerVersion}",
+                              dagger              : "com.google.dagger:dagger:${daggerVersion}",
+                              picasso             : "com.squareup.picasso:picasso:${picassoVersion}",
+                              javaxAnnotation     : "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+                              jUnit               : "junit:junit:${jUnitVersion}",
+                              jetbrainsAnnotations: "org.jetbrains:annotations:${jetbrainsAnnotationVersion}"]
 
   presentationTestDependencies = [mockito          : "org.mockito:mockito-core:${mockitoVersion}",
                                   dexmaker         : "com.google.dexmaker:dexmaker:${dexmakerVersion}",

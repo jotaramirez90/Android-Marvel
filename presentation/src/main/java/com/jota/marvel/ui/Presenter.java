@@ -8,6 +8,6 @@ public abstract class Presenter<T extends View> {
     this.view = view;
   }
 
-  public void viewReady() {
+  public void viewPrepared() {
   }
 }

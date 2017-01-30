@@ -10,7 +10,7 @@ import com.jota.marvel.ui.View;
 
 public abstract class BaseActivity extends AppCompatActivity implements View {
 
-  protected View mView;
+  protected android.view.View mView;
   private BasePresenter mPresenter;
 
   public abstract ViewComponent bindViewComponent();
@@ -43,7 +43,12 @@ public abstract class BaseActivity extends AppCompatActivity implements View {
     bindViewComponent().inject(this);
     this.mPresenter = bindPresenter();
     this.mPresenter.attachView(this);
-    setContentView(getLayoutInflater().inflate(bindLayout(), null));
+    mView = getLayoutInflater().inflate(bindLayout(), null);
+    setContentView(mView);
     ButterKnife.bind(this);
+    onViewPrepared();
+  }
+
+  public void onViewPrepared() {
   }
 }

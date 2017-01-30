@@ -5,6 +5,7 @@ import com.jota.marvel.model.ComicModel;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
 import javax.inject.Inject;
 
 public class ComicModelDataMapper {
@@ -26,8 +27,8 @@ public class ComicModelDataMapper {
     return comicModel;
   }
 
-  public Collection<ComicModel> transform(Collection<Comic> comicCollection) {
-    Collection<ComicModel> comicModelCollection;
+  public List<ComicModel> transform(List<Comic> comicCollection) {
+    List<ComicModel> comicModelCollection;
     if (comicCollection != null && !comicCollection.isEmpty()) {
       comicModelCollection = new ArrayList<>();
       for (Comic user : comicCollection) {

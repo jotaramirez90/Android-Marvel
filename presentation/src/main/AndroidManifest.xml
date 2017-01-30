@@ -25,16 +25,11 @@
       </intent-filter>
     </activity>
     <activity
-        android:name=".ui.features.detail.view.ItemDetailActivity"
-        android:label="@string/title_item_detail"
+        android:name=".ui.features.detail.view.DetailsActivity"
         android:parentActivityName=".ui.features.main.view.MainActivity"
-        android:theme="@style/AppTheme.NoActionBar"
-        >
-      <meta-dataEntity
-          android:name="android.support.PARENT_ACTIVITY"
-          android:value="com.jota.marvel.ui.features.main.view.MainActivity"
-          />
-    </activity>
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"
+        />
   </application>
 
 </manifest>

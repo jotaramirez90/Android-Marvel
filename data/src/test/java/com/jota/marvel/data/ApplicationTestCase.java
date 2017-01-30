@@ -1,6 +1,5 @@
 package com.jota.marvel.data;
 
-import com.jota.marvel.dataEntity.BuildConfig;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
