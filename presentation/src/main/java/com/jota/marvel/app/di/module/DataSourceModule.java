@@ -14,11 +14,11 @@ import javax.inject.Singleton;
   }
 
   @Provides @Named("public_api_key") public String providePublicKey() {
-    return "6a7ed890b4b941a925202a5630d5b162";
+    return "fakePublicKey";
   }
 
   @Provides @Named("private_api_key") public String providePrivateKey() {
-    return "0f1d0fdf46a0bf32f962b0b9997233c0395cdf8e";
+    return "fakePrivateKey";
   }
 
   @Provides @Singleton public CloudData provideDataRepository(@Named("endpoint") String endpoint,
